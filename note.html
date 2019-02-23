@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Note Manager</title>
+        <link rel="stylesheet" type="text/css" href="note.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h2>NoteIT PRO</h2>
+                <h4 style="color:cornflowerblue;font-style: oblique">A Portable Online Note Taking Web App</h4>
+                <form id="search-note">
+                    <input type="text" placeholder="search note....">
+                </form>
+            </header>
+            <div class="note-list">
+                <ul id="list">
+                    <li>
+                        <p id="fstn">First Note</p>
+                        <p id="fonts-wrapper"><i class="fa fa-pencil-square-o"></i><i class="fa fa-times"></i></p>
+                        <input type="text" class="edit-note" cols="50" rows="50">
+                    </li>
+                    <li>
+                        <p id="fstn">Second Note</p>
+                        <p><i class="fa fa-pencil-square-o"></i><i class="fa fa-times"></i></p>
+                        <input type="text" class="edit-note" cols="50" rows="50">
+                    </li>
+                    <li>
+                        <p id="fstn">Third Note</p>
+                        <p><i class="fa fa-pencil-square-o"></i><i class="fa fa-times"></i></p>
+                        <input type="text" class="edit-note" cols="50" rows="50">
+                    </li>
+                </ul>
+            </div>
+            <div id="hide-list">
+                <label for="hide">Hide Notes</label>
+                <input type="checkbox" id="hide">
+            </div>
+            <div id="add-notes">
+                <form id="add">
+                    <input type="text" placeholder="Add a note..." id="add-input">
+                    <input type="submit" value="Add" id="add-btn">
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="note.js"></script>
+</html>
